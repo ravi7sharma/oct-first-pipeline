@@ -1,0 +1,12 @@
+pipeline {
+
+agent any
+stages {
+	
+    stage ('print a message')
+    {steps { sh "job-is-building"}}
+
+    stage ('print a message')
+    {steps { sh "package -is-deploying"}}
+}
+}
